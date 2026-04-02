@@ -1,0 +1,11 @@
+# Ignore the entire output directory
+output/
+
+# Ignore the temporary directory inside R
+R/tmp/
+
+# R-specific environment files 
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store

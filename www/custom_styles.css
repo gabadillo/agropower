@@ -1,0 +1,28 @@
+/* Background Image for the Entire Page */
+body {
+    background-image: url("background/banner1.jpg"); 
+    /*background-size: cover;    /* Adjusts image to cover the entire background */
+    /*background-repeat: no-repeat; /* Prevents image repetition */
+    background-attachment: fixed; /* Keeps image fixed during scrolling */
+    /* Ensure no residual white color is overriding the image */
+    background-color: transparent !important; 
+}
+
+/* Fix for Sidebar Vertical Alignment (Pushes it down to match the main panel) */
+.col-sm-4 { 
+    margin-top: 60px; 
+}
+
+/* Optional: If the main content area still shows white inside, apply this: */
+.container-fluid {
+    background-color: transparent !important; 
+}
+
+.well {
+ background-color: rgba(255, 255, 255, 0.9) !important; 
+}
+
+/* Targets the main panel container (adjust .col-sm-8 or .col-sm-9 if your main panel width is different) */
+.col-sm-8, .col-sm-9 {
+ background-color: rgba(255, 255, 255, 0.9) !important; 
+}

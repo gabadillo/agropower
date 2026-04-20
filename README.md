@@ -36,3 +36,14 @@ shiny::runApp()
 ```
 
 > The app was developed and tested with R >= 4.2. If you run into issues, make sure your R version and packages are up to date.
+
+---
+
+## Output
+
+After a simulation run completes, two files are saved to the `output/` directory. Both are named with the number of iterations and the random seed used, following the pattern `<type>_<nIter>_<seed>`:
+
+| File | Pattern | Description |
+|------|---------|-------------|
+| Summary table | `output/summary_<nIter>_<seed>.csv` | Aggregated metrics displayed in the **Summary Metrics** tab: design parameters, variance components, power estimates, ranking statistics, and empirical false positive rate. |
+| Estimates plot | `output/estimates_<nIter>_<seed>.png` | Point estimates with 95% confidence intervals for the control gene across all iterations, as shown in the **Summary Plots** tab. |

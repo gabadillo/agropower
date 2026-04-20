@@ -73,7 +73,7 @@ server <- function(input, output, session) {
       Var = c('Number of genotypes             ',
               'Number of environments          ',
               'Number of blocks per environment'),
-      Symbol = c('G', 'E', 'B'),
+      Symbol = c('N_g', 'N_E', 'N_B'),
       Value = unname(unlist(params$Design))
     ))
     
@@ -85,7 +85,7 @@ server <- function(input, output, session) {
               'GxE variance          ',
               'Residual variance     ',
               'Total variance        '),
-      Symbol = c("Vg", "Ve", "Vb", "Vx", "Vr", "Vy"), 
+      Symbol = c("s2_g", "s2_E", "s2_B", "s2_gxE", "s2_res", "s2_y"),
       Value = unname(unlist(params$Variances))
     ))
     
@@ -93,7 +93,7 @@ server <- function(input, output, session) {
     print(data.frame(
       Var = c('Number of treatments        ',
               'Positive control effect size'),
-      Symbol = c('N', 'S'),
+      Symbol = c('N_C', 'S'),
       Value = unname(unlist(params$Genetic))
     ))
     

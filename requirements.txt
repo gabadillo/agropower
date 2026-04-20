@@ -1,0 +1,8 @@
+shiny
+shinyWidgets
+tidyverse
+DT
+purrr
+mvtnorm
+lmerTest
+ggpubr
